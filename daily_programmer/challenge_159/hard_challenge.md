@@ -1,0 +1,1 @@
+http://www.reddit.com/r/dailyprogrammer/comments/23yinj/4252014_challenge_159_hard_rock_paper_scissors/
