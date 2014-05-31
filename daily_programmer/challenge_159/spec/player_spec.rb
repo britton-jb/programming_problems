@@ -1,10 +1,10 @@
 require "spec_helper"
-
-Player_choices = ['rock', 'paper', 'scissors', 'lizard', 'spock']
-Player_types = ['human', 'monday', 'wednesday', 'friday']
+require "player"
 
 describe Player do
-  @p1 = Player.new(stack: nil)
+  before(:each) do
+    @p1 = Player.new(stack: nil)
+  end
   #move player type validations to here?
   describe '#human' do
     it 'is pending, i need to figure out how to test this'

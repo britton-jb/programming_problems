@@ -24,7 +24,7 @@ class Game
     if Combinations[@p1_choice][@p2_choice]
       puts "#{p1_cap} #{Combinations[@p1_choice][@p2_choice]} #{p2_cap}. Player 1 wins!"
       @result = :p1_wins
-    elsif
+    elsif Combinations[@p2_choice][@p1_choice]
       puts "#{p2_cap} #{Combinations[@p2_choice][@p1_choice]} #{p1_cap}. Player 2 wins!"
       @result = :p2_wins
     else

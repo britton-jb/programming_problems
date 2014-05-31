@@ -5,9 +5,9 @@ before looking at answers to help my refactoring.
 Hopefully this repo showcases growth and improvements in coding ability in simple problems, along with my other public repos.
 
 ## Sources:
-(/r/DailyProgrammer)[reddit.com/r/dailyprogrammer]
+[/r/DailyProgrammer](reddit.com/r/dailyprogrammer)
 
-(Project Euler)[projecteuler.net]
+[Project Euler](projecteuler.net)
 
 ### Potential Sources
-(Topcoder)[http://www.topcoder.com/]
+[Topcoder](http://www.topcoder.com/)
