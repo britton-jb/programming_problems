@@ -26,11 +26,10 @@ class Series
   end
   
   def stats
-    puts "Total games: #{@total}"
-    puts "Player 1 Type: #{@p1_type}"
-    puts "Player 1 Wins: #{@p1_wins}, #{(@p1_wins / @total) * 100}%"
-    puts "Player 2 Type: #{@p2_type}"
-    puts "Player 2 Wins: #{@p2_wins}, #{(@p2_wins / @total) * 100}%"
-    puts "Ties: #{@ties}, #{(@ties / @total) * 100}%"
+    puts "Total games:   #{@total}"
+    puts "Player 1 Type: #{@p1_type}, Player 2 Type: #{@p2_type}"
+    puts "Player 1 Wins: #{@p1_wins}, #{(@p1_wins.to_f / @total.to_f) * 100}%"
+    puts "Player 2 Wins: #{@p2_wins}, #{(@p2_wins.to_f / @total.to_f) * 100}%"
+    puts "Ties:          #{@ties}, #{(@ties.to_f / @total.to_f) * 100}%"
   end
 end

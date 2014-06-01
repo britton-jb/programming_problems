@@ -33,9 +33,17 @@ class Game
     end
   end
   
-  def update_series
-    #send message updating series
-    #best way to do updating messaging?
+  def update_series(series)
+    if @result == :p1_wins
+      series.total += 1
+      series.p1_wins += 1
+    elsif @result == :p2_wins
+      series.total += 1
+      series.p2_wins += 1
+    else
+      series.total += 1
+      series.ties += 1
+    end
   end
   
   def update_ai_stack
