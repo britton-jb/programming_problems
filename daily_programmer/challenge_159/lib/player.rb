@@ -1,7 +1,7 @@
 class Player
   attr_accessor :stack
   def initialize(args)
-    @stack = args[:stack] || {}
+    @stack = args[:stack] || {rock: 0, paper: 0, scissors: 0, lizard: 0, spock: 0}
   end
   Player_choices = ['rock', 'paper', 'scissors', 'lizard', 'spock']
   def human
@@ -19,12 +19,16 @@ class Player
   end
   
   def monday
-    choice = Player_choices[rand(5)]
-    return choice
+    return Player_choices[rand(5)]
   end
   
   def wednesday
-    # if stack is empty, random, else strat
+    if @stack #hmm....
+      #setup AI choices
+      
+    else
+      return Player_choices[rand(5)]
+    end
   end
   
   def friday
