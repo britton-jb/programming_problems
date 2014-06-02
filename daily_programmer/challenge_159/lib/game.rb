@@ -7,8 +7,14 @@ class Game
     @result = args[:result]
   end
   
-  def end_game
+  def end_game(args)
+    series = args[:series]
+    p1 = args[:p1]
+    p2 = args[:p2]
     #call winner, update_series, and update_ai_stack
+    self.winner
+    self.update_series(series)
+    self.update_ai_stack(p1, p2)
   end
   
   Combinations = {rock: { scissors: 'crushes', lizard: 'crushes'},
@@ -46,8 +52,8 @@ class Game
     end
   end
   
-  def update_ai_stack
-    #send message updating AI
-    #best way to do updating messaging?
+  def update_ai_stack(p1, p2)
+    p1.stack[@p1_choice] += 1
+    p2.stack[@p2_choice] += 1
   end
 end

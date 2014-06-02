@@ -15,8 +15,7 @@ until @series.play_again == false
   p2_choice = @p2.send(@series.p2_type)
   game = Game.new(p1_choice: p1_choice, 
                   p2_choice: p2_choice)
-  game.winner
-  game.update_series(@series)
+  game.end_game(series: @series, p1: @p1, p2: @p2)
   @series.play_again?
 end
 puts @series.stats
