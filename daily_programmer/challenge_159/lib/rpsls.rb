@@ -12,16 +12,17 @@ class Series
   
   def play_again?
     puts "Would you like to play again? y/n"
-    while true
+    begin
       case gets.chomp.downcase
       when 'yes', 'y'
-        break
       when 'no', 'n'
         @play_again = false
-        break
       else
-        puts "Error: please enter a valid response. y/n"
+        raise StandardError
       end
+      rescue StandardError
+        puts "Error: please enter a valid response. y/n"
+        retry
     end
   end
   
